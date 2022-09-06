@@ -1,0 +1,30 @@
+body {
+    background: linear-gradient(90deg, #4b6cb7 0%, #182848 100%);
+}
+
+h1 {
+    font-family: "Helvetica Neue";
+    font-size: 24px;
+    font-style: normal;
+    font-variant: normal;
+    font-weight: 700;
+    line-height: 26.4px;
+    user-select: none;
+}
+
+span {
+    user-select: none;
+}
+
+#titre {
+    animation: color-change 5s infinite;
+  }
+  
+  @keyframes color-change {
+    0% { color: rgb(255, 255, 255); }
+    25% { color: rgb(213, 213, 255); }
+    50% { color: rgb(164, 181, 255); }
+    75% { color: rgb(184, 214, 255); }
+    100% { color: rgb(255, 255, 255); }
+  }
+  
