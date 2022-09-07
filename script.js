@@ -25,9 +25,16 @@ function setTime() {
     ++time
 }
 
-function startTimer() {
-    setInterval(setTime, 1000)
-  }
+  var startTimer = (function() {
+    var executed = false;
+    return function() {
+        if (!executed) {
+            executed = true;
+            setInterval(setTime, 1000)
+        }
+    };
+})();
+
 
 // Modal
 
